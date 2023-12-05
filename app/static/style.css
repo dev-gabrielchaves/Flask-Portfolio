@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    text-align: center;
+}
+body {
+    margin-top: 75px;
+}
+nav {
+    margin-bottom: 15px;
+}
+.nav__link {
+    text-decoration: none;
+    color: rgb(70, 70, 70)
+}
+.nav__link--active,
+.nav__link:hover {
+    font-weight: bold;
+}
+.nav__link:not(:last-of-type) {
+    margin-right: 50px;
+}
