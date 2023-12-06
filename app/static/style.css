@@ -16,7 +16,7 @@ html {
 .header hr {
     width: 330px;
     margin: 17.5px auto;
-    border-color: rgb(100, 100, 100);;
+    border-color: rgb(100, 100, 100);
     opacity: 0.7;
 }
 body {
@@ -34,6 +34,9 @@ nav {
 .nav__link:hover {
     color: black;
 }
+.nav__link:hover {
+    box-shadow: 0px 1.5px black;
+}
 .nav__link:not(:last-of-type) {
     margin-right: 70px;
 }
@@ -47,4 +50,24 @@ main {
     padding: 0 10px;
     text-align: justify;
     line-height: 150%;
+}
+/* Contact */
+.main__contact {
+    width: 300px;
+    padding: 0 10px;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+.contact:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+.contact--link {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+}
+.contact--link:hover {
+    color: black;
+    box-shadow: 0px 1.5px black;
 }

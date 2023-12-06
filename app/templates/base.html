@@ -13,15 +13,9 @@
         </h1>
         <hr>
         <nav>
-            <a href="{{url_for('home')}}" class="nav__link {{ 'nav__link--active' if request.path == url_for('home') }}">
-                Projects
-            </a>
-            <a href="{{url_for('about')}}" class="nav__link {{ 'nav__link--active' if request.path == url_for('about') }}">
-                About
-            </a>
-            <a href="{{url_for('contact')}}" class="nav__link {{ 'nav__link--active' if request.path == url_for('contact') }}">
-                Contact
-            </a>
+            <a href="{{url_for('home')}}" class="nav__link {{ 'nav__link--active' if request.path == url_for('home') }}">Projects</a>
+            <a href="{{url_for('about')}}" class="nav__link {{ 'nav__link--active' if request.path == url_for('about') }}">About</a>
+            <a href="{{url_for('contact')}}" class="nav__link {{ 'nav__link--active' if request.path == url_for('contact') }}">Contact</a>
         </nav>
     </header>
     {% block content %}
