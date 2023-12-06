@@ -6,23 +6,45 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Base */
 .header {
     text-align: center;
+}
+.header h1 {
+    margin: 0;
+}
+.header hr {
+    width: 330px;
+    margin: 17.5px auto;
+    border-color: rgb(100, 100, 100);;
+    opacity: 0.7;
 }
 body {
     margin-top: 75px;
 }
 nav {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 .nav__link {
     text-decoration: none;
-    color: rgb(70, 70, 70)
+    color: rgb(100, 100, 100);
+    transition: color 0.15s;
 }
 .nav__link--active,
 .nav__link:hover {
-    font-weight: bold;
+    color: black;
 }
 .nav__link:not(:last-of-type) {
-    margin-right: 50px;
+    margin-right: 70px;
+}
+/* General */
+main { 
+    margin: 0 auto;
+}
+/* About */
+.main__about {
+    width: 600px;
+    padding: 0 10px;
+    text-align: justify;
+    line-height: 150%;
 }
