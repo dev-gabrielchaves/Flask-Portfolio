@@ -11,6 +11,7 @@ html {
     text-align: center;
 }
 .header h1 {
+    font-size: 38px;
     margin: 0;
 }
 .header hr {
@@ -71,3 +72,56 @@ main {
     color: black;
     box-shadow: 0px 1.5px black;
 }
+/* Home */
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 1.25rem;
+    justify-content: center;
+    justify-items: center;
+    max-width: 21.875rem;
+    margin: 0 auto;
+  }
+  .project-card {
+    padding: 0.75rem 0;
+  }
+  .project-card__image {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease-in-out;
+    border: solid 2.5px black;
+    border-radius: 7px;
+  }
+  .project-card__meta {
+    padding: 0 1.25rem;
+  }
+  .project-card__name {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: #1c2023;
+  }
+  .project-card:hover .project-card__image {
+    transform: translateY(-0.5rem);
+  }
+  .project-card:hover .project-card__name {
+    text-decoration: underline;
+  }
+  .categories {
+    display: flex;
+    padding: 0;
+    margin: 0 0 0.75rem;
+    color: rgb(100, 100, 100);
+    list-style: none;
+    line-height: 1.45;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.075rem;
+  }
+  .categories__tag:not(:last-of-type)::after {
+    content: "|";
+    margin: 0 0.25rem;
+  }
+  .u-bare-link {
+    text-decoration: none;
+  }
